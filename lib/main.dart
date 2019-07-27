@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/pages/auth.dart';
+import 'package:flutter_sample/pages/products.dart';
+import 'package:flutter_sample/pages/products_admin.dart';
 // simport 'package:flutter/rendering.dart';
 
 void main() {
@@ -19,7 +21,11 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.deepOrange,
         accentColor: Colors.deepPurple,
       ),
-      home: AuthPage(),
+      // home: AuthPage(),
+      routes: {
+        '/': (BuildContext context) => ProductsPage(),
+        '/admin': (BuildContext context) => ProductsAdminPage(),
+      },
     );
   }
 }
