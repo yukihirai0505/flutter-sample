@@ -17,11 +17,15 @@ class Products extends StatelessWidget {
           //   height: 10.0,
           // ),
           Container(
-            // margin: EdgeInsets.only(top: 10.0),
             padding: EdgeInsets.only(top: 10.0),
-            // color: Colors.red,
-            // margin: EdgeInsets.symmetric(vertical: 10.0),
-            child: Text(products[index]['title']),
+            child: Text(
+              products[index]['title'],
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'LightNovel',
+              ),
+            ),
           ),
           ButtonBar(
             alignment: MainAxisAlignment.center,
