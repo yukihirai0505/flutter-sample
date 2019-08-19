@@ -43,10 +43,10 @@ class _MyAppState extends State<MyApp> {
         primaryColor: Colors.deepOrange,
         accentColor: Colors.deepPurple,
       ),
-      // home: AuthPage(),
+      home: AuthPage(),
       routes: {
         // '/': (BuildContext context) => AuthPage(),
-        '/': (BuildContext context) => ProductsPage(_products),
+        // '/': (BuildContext context) => ProductsPage(_products),
         '/admin': (BuildContext context) =>
             ProductsAdminPage(_addProduct, _deleteProduct),
       },
